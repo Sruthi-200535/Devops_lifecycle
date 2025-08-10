@@ -1,58 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radiant Cosmetics</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Radiant</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <h1>Dictionary App</h1>
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button onclick="searchWord()">Search</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="changeBackground()">Change Background</button>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Radiate Confidence</h1>
-      <p>Discover luxury skincare and cosmetics made for every shade, tone, and texture.</p>
-      <a href="#products" class="btn">Shop Now</a>
-    </div>
-  </section>
+    <div class="result" id="result"></div>
 
-  <section id="products" class="products-section">
-    <h2>Our Bestsellers</h2>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="https://img.freepik.com/premium-photo/beautiful-lipstick-background_874813-9442.jpg" alt="Lipstick">
-        <h3>Velvet Lipstick</h3>
-        <p>₹499</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="http://www.pinnaclecosmetics.com/content/images/product/FLAWLESS_FINISH_FACE_MAKEUP.jpg" alt="Foundation">
-        <h3>Flawless Foundation</h3>
-        <p>₹799</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="https://img.freepik.com/premium-photo/close-up-shot-makeup-brush-delicately-applying-shimmery-highlighter-cheekbones-generative-ai_697880-4037.jpg" alt="Highlighter">
-        <h3>Glow Highlighter</h3>
-        <p>₹599</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Radiant Cosmetics. All rights reserved.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
